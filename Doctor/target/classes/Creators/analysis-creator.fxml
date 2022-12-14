@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="476.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctor.View.AnalysisCreatorView">
+    <children>
+        <VBox fx:id="vBox" prefHeight="200.0" prefWidth="100.0" spacing="16.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="16.0">
+                    <children>
+                        <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="TOP" text=" Анализы: ">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameTextField" />
+                        <Label textFill="#ff3939">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Label fx:id="surnameLabel" prefHeight="25.0" prefWidth="106.0" text="Вывод: ">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <JFXTextArea fx:id="textArea" prefHeight="233.0" prefWidth="581.0" />
+                <Label>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                  <JFXButton fx:id="addButton" onAction="#addAction" text="ДОБАВИТЬ ЗАПИСЬ" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
