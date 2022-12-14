@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reception.Controllers.Registrars.SignInController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="307.0" prefWidth="938.0" spacing="35.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TextField fx:id="loginField" alignment="CENTER" maxWidth="241.0" prefHeight="32.0" prefWidth="241.0" promptText="Логин">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordField" alignment="CENTER" maxWidth="239.0" prefHeight="31.0" prefWidth="239.0" promptText="Пароль">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
+            <JFXButton fx:id="signInButton" onAction="#signInAction" text="ВОЙТИ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="32.0" />
+               </VBox.margin>
+            </JFXButton>
+            </children>
+        </VBox>
+        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="70.0" prefWidth="377.0" text="Авторизация" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="16.0">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+      <JFXButton fx:id="signUpButton" layoutX="639.0" layoutY="33.0" onAction="#signUpAction" text="ЗАРЕГИСТРИРОВАТЬСЯ" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="36.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

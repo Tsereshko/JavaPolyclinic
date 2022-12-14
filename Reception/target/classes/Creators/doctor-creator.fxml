@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane prefHeight="706.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="error"
+               layoutX="398.0" layoutY="680.0" AnchorPane.bottomAnchor="150.0"
+               AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="16.0" AnchorPane.bottomAnchor="20.0"
+              AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <VBox fx:id="labelVBox" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308"
+                      maxWidth="1.7976931348623157E308" spacing="25.0">
+                    <children>
+                        <Label fx:id="nameLabel" text="Имя: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="surnameLabel" text="Фамилия: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="patronymicLable" text="Отчество: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="genderLabel" text="Специальность: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="genderLabel1" text="Кабинет">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="phoneLabel" text="Телефон: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Логин: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Пароль: ">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox fx:id="fillVBox" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+                      maxWidth="1.7976931348623157E308">
+                    <children>
+                        <TextField fx:id="nameTextField"/>
+                        <Label fx:id="nameError" textFill="#ff3939">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="surnameTextField"/>
+                        <Label fx:id="surnameError">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="patronymicTextField"/>
+                        <Label fx:id="patronymicError">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="jobCombo" prefWidth="150.0"/>
+                        <Label fx:id="phoneError22">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="cabinetTextField"/>
+                        <Label fx:id="comboError">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="phoneTextField">
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </TextField>
+                        <Label fx:id="phoneError">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameTextField"/>
+                        <Label fx:id="phoneError1">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="passwordTextField"/>
+                        <Label fx:id="phoneError2">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <JFXButton fx:id="buttonButton" text="ДОБАВИТЬ" AnchorPane.bottomAnchor="100.0"
+                   AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

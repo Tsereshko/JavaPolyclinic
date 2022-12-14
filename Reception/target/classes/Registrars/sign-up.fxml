@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reception.Controllers.Registrars.SignUpController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="70.0" prefWidth="377.0" text="Регистрация" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <VBox layoutY="79.0" prefHeight="438.0" prefWidth="687.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0">
+            <children>
+                <VBox alignment="BOTTOM_CENTER" prefHeight="381.0" prefWidth="687.0" spacing="6.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                  <TextField fx:id="nameField" alignment="CENTER" maxWidth="241.0" prefHeight="32.0" prefWidth="241.0" promptText="Имя">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Неверный формат" textFill="#ff8787" visible="false">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="surnameField" alignment="CENTER" maxWidth="239.0" prefHeight="31.0" prefWidth="239.0" promptText="Фамилия">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </PasswordField>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="32.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" prefHeight="408.0" prefWidth="687.0" spacing="6.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <TextField fx:id="loginField" alignment="CENTER" maxWidth="241.0" prefHeight="32.0" prefWidth="241.0" promptText="Логин">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" alignment="CENTER" maxWidth="239.0" prefHeight="31.0" prefWidth="239.0" promptText="Пароль">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </PasswordField>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                  <JFXButton fx:id="signUpButton" onAction="#signUpAction" text="ЗАРЕГИСТРИРОВАТЬСЯ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+      <JFXButton fx:id="backButton" layoutX="69.0" layoutY="23.0" onAction="#backAction" text="ВЕРНУТЬСЯ" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
